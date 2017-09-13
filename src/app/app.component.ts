@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  ngOnInit(): void {
+
+
+  }
+
+  menu(): void {
+     $('.xs-menu').toggleClass('displaynone');
+  }
+
+
+
 }
